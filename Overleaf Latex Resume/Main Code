@@ -1,0 +1,146 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{parskip}
+
+% Page layout
+\geometry{
+    left=1.5cm,
+    right=1.5cm,
+    top=1.5cm,
+    bottom=1.5cm
+}
+
+% ATS-friendly formatting
+\definecolor{primary}{RGB}{0, 0, 0} % Black for better ATS parsing
+\definecolor{accent}{RGB}{0, 51, 102} % Professional dark blue
+
+% Section formatting for ATS
+\titleformat{\section}{\large\bfseries\color{primary}}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+% Remove all fancy elements for ATS
+\setlist{nosep, leftmargin=*}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+% Header Section - Left Aligned
+\noindent
+{\Huge\bfseries Kumar Boste}\\[5pt]
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+    \faIcon{phone} \href{tel:+91 9699876166}{+91 9699876166}\\
+    \faIcon{envelope} \href{mailto:bostekumar@gmail.com}{bostekumar@gmail.com}\\
+    \faIcon{map-marker} Mumbai, Maharashtra
+\end{minipage}%
+\begin{minipage}[t]{0.5\textwidth}
+    \faIcon{linkedin} \href{https://www.linkedin.com/in/kumar-boste}{https://www.linkedin.com/in/kumar-boste}\\
+    \faIcon{github} \href{https://github.com/KumarBoste}{https://github.com/KumarBoste}
+\end{minipage}
+
+\vspace{0.5cm}
+% Professional Summary
+\section{Profile Summary}
+Aspiring Data Analyst with strong technical training in Python programming, SQL databases, and modern data stack tools including Databricks and Snowflake. Developed practical skills in data processing, ETL pipeline development, and business intelligence using Tableau and Power BI. Familiar with statistical analysis, machine learning concepts, and cloud platforms. Demonstrated ability to learn complex technical concepts quickly and apply them to solve data analysis challenges. Eager to begin career in data analytics and contribute to organizational success.
+
+
+% Technical Skills - Maximum ATS Compatibility
+\section{Technical Skills}
+\begin{itemize}
+    \item \textbf{Programming Languages:} Python, SQL, R, Java
+    \item \textbf{Data Analysis Libraries:} Pandas, NumPy, Scikit-learn, TensorFlow, Keras
+    \item \textbf{Data Visualization:} Tableau, Power BI, Matplotlib, Seaborn, Excel
+    \item \textbf{Big Data Technologies:} Databricks, PySpark, Apache Spark, Hadoop, ETL Pipelines
+    \item \textbf{Cloud Platforms:} AWS, Google Cloud Platform, Snowflake, Cloud Services
+    \item \textbf{Database Systems:} MySQL, PostgreSQL, MongoDB, BigQuery, SQLite, Snowflake, Data Warehousing
+    \item \textbf{Machine Learning:} Regression Analysis, Classification, Clustering, Natural Language Processing, Time Series Analysis
+    \item \textbf{Data Engineering:} ETL Development, Data Pipelines, Distributed Computing, Data Modeling
+    \item \textbf{Statistical Methods:} Hypothesis Testing, A/B Testing, Statistical Inference, Probability Distributions
+    \item \textbf{Development Tools:} Git, Docker, Jupyter Notebook, Linux, Jira, Stack Overflow
+    \item \textbf{Methodologies:} Agile Methodologies, Data Analysis, Business Intelligence, Data Visualization
+\end{itemize}
+
+% Projects - Focus on impact and technologies
+\section{Projects}
+
+\textbf{Predictive Sales Analytics System} \hfill \textit{Python, Scikit-learn, SQL}
+\begin{itemize}
+    \item Developed machine learning model to forecast sales with 87\% accuracy using Random Forest and XGBoost algorithms
+    \item Performed feature engineering and hyperparameter tuning to optimize model performance
+    \item Created interactive dashboard using Plotly for data visualization and result analysis
+    \item \textbf{Technologies:} Python, Pandas, Scikit-learn, SQL, Plotly
+\end{itemize}
+
+\textbf{Customer Segmentation using Machine Learning} \hfill \textit{Python, Machine Learning}
+\begin{itemize}
+    \item Implemented K-Means and DBSCAN clustering algorithms to segment 10,000+ customers
+    \item Analyzed customer behavior patterns and purchasing habits for targeted marketing
+    \item Visualized clusters using PCA and t-SNE for dimensionality reduction
+    \item \textbf{Technologies:} Python, Scikit-learn, Matplotlib, Seaborn
+\end{itemize}
+
+\textbf{Stock Market Prediction System} \hfill \textit{Python, Time Series Analysis}
+\begin{itemize}
+    \item Built time series analysis system using ARIMA and LSTM models for stock price prediction
+    \item Implemented data collection from Yahoo Finance API and real-time data processing
+    \item Achieved 15\% better accuracy compared to traditional forecasting methods
+    \item \textbf{Techniques:} ARIMA, LSTM, Moving Averages, Technical Indicators
+\end{itemize}
+
+\textbf{E-commerce Business Intelligence Dashboard} \hfill \textit{Tableau, SQL}
+\begin{itemize}
+    \item Created comprehensive Tableau dashboard analyzing sales trends and customer behavior
+    \item Developed complex SQL queries for data extraction, transformation, and analysis
+    \item Implemented interactive filters and parameters for dynamic data exploration
+    \item \textbf{Skills:} Data Visualization, SQL Joins, Dashboard Design, Business Intelligence
+\end{itemize}
+
+\textbf{Social Media Sentiment Analysis} \hfill \textit{Python, Natural Language Processing}
+\begin{itemize}
+    \item Developed NLP pipeline to analyze sentiment from 50,000+ Twitter data points
+    \item Achieved 85\% classification accuracy using TextBlob and NLTK libraries
+    \item Implemented feature extraction using TF-IDF and Word2Vec techniques
+    \item \textbf{Libraries:} NLTK, TextBlob, BeautifulSoup, Pandas
+\end{itemize}
+
+% Education
+\section{Education}
+\textbf{Bachelor of Science in Information Technology} \hfill \textit{2022 - 2025}\\
+Mumbai University \hfill \textbf{CGPA: 8.75/10.0}
+
+\textbf{Higher Secondary Education (12th)} \hfill \textit{2021}\\
+Maharashtra State Board \hfill \textbf{Percentage: 47.17\%}
+
+\textbf{Secondary Education (10th)} \hfill \textit{2019}\\
+Maharashtra State Board \hfill \textbf{Percentage: 77.40\%}
+
+% Certifications
+\section{Certifications \& Technical Expertise}
+\begin{itemize}
+    \item \textbf{Data Science \& Analytics with AL/ML Certification} - IT Vedant \hfill \textit{2025}
+    \begin{itemize}
+        \item \textbf{Advanced Excel:} Data Analysis, PivotTables, Advanced Formulas, Charting
+        \item \textbf{SQL Programming:} Database Queries, Data Manipulation, Query Optimization
+        \item \textbf{Power BI:} Data Visualization, Dashboard Development, Business Intelligence
+        \item 180+ hours of intensive hands-on training in data analytics tools and techniques
+    \end{itemize}
+\end{itemize}
+
+% Internships
+\section{Internships}
+\textbf{Deloitte Data Analytics Virtual Internship} \hfill \textit{ Octomber-2025}
+\begin{itemize}
+    \item Completed Deloitte's data analytics virtual internship program with real-world consulting projects
+    \item Developed interactive dashboards and visualizations for executive decision-making by using Tableau
+    \item Applied data cleaning, transformation, and analysis techniques on complex business datasets using Excel
+    \item Gained exposure to industry best practices in data analytics and consulting methodologies
+     \item \textbf{Skill Learn:} Data Analysis, Data Modeling, Data Visualization Tools, Spreadsheet Skills.
+    
+\end{itemize}
+\end{document}
